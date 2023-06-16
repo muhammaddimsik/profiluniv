@@ -1,0 +1,173 @@
+:root {
+  --primary: #109540;
+  --secondary: #fda50f;
+  --ternary: #61ce70;
+  --fourty: #f0fff2;
+  --gray: #f2f2f2;
+}
+
+/* keunggulan */
+#keunggulan{
+  padding: 40px 0;
+  background: linear-gradient(to bottom, var(--fourty), #ffffff);
+}
+#keunggulan .container .keunggulan-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+#keunggulan .container .keunggulan-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#keunggulan .container .keunggulan-content .card {
+  width: 30%;
+  padding: 30px 20px;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+#keunggulan .container .keunggulan-content .card .card-icon {
+  margin-bottom: 10px;
+}
+#keunggulan .container .mitra-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#keunggulan .container .mitra-container .mitra {
+  width: 20%;
+  padding: 20px;
+}
+#keunggulan .container .mitra-container .mitra img {
+  width: 100%;
+}
+
+/* slogan */
+#slogan{
+  margin-top: 20px;
+}
+#slogan .container .content{
+  padding: 40px 40px 0;
+  width: 100%;
+  border-radius: 30px;
+  background-color: var(--fourty);
+  display: flex;
+  justify-content: space-between;
+}
+#slogan .container .content .text{
+  width: 48%;
+}
+#slogan .container .content .text h1{
+  font-size: 32px;
+}
+#slogan .container .content .text h3{
+  font-size: 24px;
+  color: var(--ternary);
+  margin: 0 0 20px;
+}
+#slogan .container .content .slogan-pict{
+  width: 48%;
+  display: flex;
+  align-items: end;
+}
+#slogan .container .content .slogan-pict img{
+  width: 100%;
+}
+#slogan .container .prodi{
+  margin-top: 40px;
+  padding: 40px;
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-image: url('../assets/img/mahasiswi-konghucu.jpg');
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 146, 41, 0.8);
+}
+#slogan .container .prodi .title{
+  width: 30%;
+}
+#slogan .container .prodi .title h1{
+  color: white;
+  font-weight: 500;
+  font-size: 28px;
+}
+#slogan .container .prodi .sarjana h5, #slogan .container .prodi .magister h5{
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#slogan .container .prodi .sarjana, #slogan .container .prodi .magister{
+  width: 30%;
+}
+#slogan .container .prodi .sarjana select, #slogan .container .prodi .magister select{
+  width: 100%;
+  padding: 4px;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  #keunggulan .container .keunggulan-title {
+    text-align: center;
+  }
+  #keunggulan .container .keunggulan-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #keunggulan .container .keunggulan-content .card {
+    width: 48%;
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  #keunggulan .container .mitra-container {
+    display: flex;
+  }
+  #keunggulan .container .mitra-container .mitra {
+    width: 48%;
+    padding: 20px;
+  }
+
+  /* slogan */
+  #slogan .container .content{
+    padding: 20px 20px 0;
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    justify-content: space-between;
+  }
+  #slogan .container .content .text{
+    width: 100%;
+  }
+  #slogan .container .content .slogan-pict{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    margin-top: 20px;
+  }
+  #slogan .container .prodi{
+    margin-top: 40px;
+    padding: 40px 20px;
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+  }
+  #slogan .container .prodi .title{
+    width: 100%;
+  }
+  #slogan .container .prodi .sarjana, #slogan .container .prodi .magister{
+    width: 100%;
+    margin-top: 30px;
+  }
+}

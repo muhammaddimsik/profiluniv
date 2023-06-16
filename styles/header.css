@@ -2,7 +2,12 @@
   --primary: #109540;
   --secondary: #FDA50F;
   --ternary: #61CE70;
+  --fourty: #F0FFF2;
   --gray: #F2F2F2;
+}
+
+body{
+  padding-bottom: 400px;
 }
 
 .container {
@@ -11,6 +16,7 @@
     padding: 0 15px;
 }
 
+/* header */
 header {
   width: 100%;
   position: relative;
@@ -206,7 +212,7 @@ nav ul .dropdown:hover .dropdown-content{
 
   header{
     background-color: #fff;
-    padding: 10px 0;
+    padding: 10px 0 0;
   }
 
   header .top-header{
