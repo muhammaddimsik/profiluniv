@@ -1,0 +1,138 @@
+:root {
+  --primary: #109540;
+  --secondary: #fda50f;
+  --ternary: #61ce70;
+  --fourty: #f0fff2;
+  --gray: #f2f2f2;
+  --darkblue: #001c38;
+}
+
+#berita {
+  padding: 200px 0px 100px;
+}
+#berita .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+#berita .container .content .main {
+  width: 70%;
+}
+#berita .container .content .aside {
+  width: 25%;
+  padding: 20px;
+}
+#berita .container .content .aside .list {
+  margin-bottom: 30px;
+}
+#berita .container .content .aside .list h2 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#berita .container .content .aside .list ul {
+  list-style: none;
+}
+#berita .container .content .aside .list ul li {
+  margin-bottom: 10px;
+}
+#berita .container .content .aside .list ul li a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+#berita .container .content .aside .list ul li a:hover {
+  color: blue;
+}
+#berita .container .content .aside .list select {
+  width: 100%;
+  padding: 2px 6px;
+}
+#berita .container .content .main .title h1 {
+  font-size: 32px;
+}
+#berita .container .content .main .desc {
+  margin-top: 20px;
+}
+#berita .container .content .main .desc .card{
+  width: 100%;
+  margin-top: 30px;
+}
+#berita .container .content .main .desc .card .author-date{
+  display: flex;
+  gap: 4px;
+}
+#berita .container .content .main .desc .card .author-date p{
+  font-size: 14px;
+}
+#berita .container .content .main .desc .card .body{
+  display: flex;
+  justify-content: space-between;
+}
+#berita .container .content .main .desc .card .body .text{
+  color: black;
+  text-decoration: none;
+}
+#berita .container .content .main .desc .card .body .text h4{
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 6px 0;
+  font-weight: 500;
+}
+#berita .container .content .main .desc .card .body .text h4:hover{
+  text-decoration: underline;
+}
+
+#berita .container .content .main .desc .card .body .text p{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#berita .container .content .main .desc .card .body .img{
+  width: 30%;
+}
+#berita .container .content .main .desc .card .body .img img{
+  width: 100%
+}
+#berita .container .content .main .desc .card hr{
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #berita {
+    padding: 150px 0px 10px;
+  }
+  #berita .container .content {
+    display: block;
+  }
+  #berita .container .content .main {
+    width: 100%;
+  }
+  #berita .container .content .aside {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  #berita .container .content .main .desc .card .author-date p{
+    font-size: 12px;
+  }
+  #berita .container .content .main .desc .card .body .text h4{
+    font-size: 16px;
+  }
+  #berita .container .content .main .desc .card .body .text p{
+    display: none;
+  }
+  #berita .container .content .main .desc .card .body .text{
+    width: 60%;
+  }
+  #berita .container .content .main .desc .card .body{
+    margin-top: 10px;
+  }
+}

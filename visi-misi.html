@@ -30,13 +30,15 @@
     <!-- header start -->
     <header>
       <div class="container">
-        <div class="logo">
-          <img
-            src="./assets/img/logo-stikin.png"
-            alt="logo-stikin"
-            class="logo-stikin"
-          />
-          <p class="logo-name">Sekolah Tinggi Konghucu Indonesia</p>
+        <div href="./index.html" class="logo">
+          <a href="./index.html">
+            <img
+              src="./assets/img/logo-stikin.png"
+              alt="logo-stikin"
+              class="logo-stikin"
+            />
+            <p class="logo-name">Sekolah Tinggi Konghucu Indonesia</p>
+          </a>
           <li class="humberger-menu" id="humberger-menu">
             <img src="./assets/svg/hamburger.svg" alt="humberger-menu" />
           </li>
@@ -53,10 +55,29 @@
             />
           </div>
           <ul class="dropdown-content-top">
-            <li><a href="#" class="support">e-Suppport</a></li>
-            <li><a href="#">SISFO</a></li>
-            <li><a href="#">Tracer Study</a></li>
-            <li class="dropdown">
+            <li>
+              <a
+                href="http://e-jurnal.stikin.ac.id/"
+                target="_blank"
+                class="support"
+                >Jurnal</a
+              >
+            </li>
+            <li>
+              <a href="https://siakad.stikin.ac.id/" target="_blank">SIAKAD</a>
+            </li>
+            <li>
+              <a href="http://pmb.stikin.ac.id/" target="_blank">PMB</a>
+            </li>
+            <li>
+              <a href="http://lms.stikin.ac.id/" target="_blank">E-Learning</a>
+            </li>
+            <li>
+              <a href="http://perpus.stikin.ac.id/" target="_blank"
+                >Perpustakaan</a
+              >
+            </li>
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-btn">
                 <p>Tautan Penting</p>
                 <img
@@ -79,8 +100,7 @@
                   <a href="#">Sertifikasi Microsoft</a>
                 </li>
               </ul>
-            </li>
-            <li><a href="#">Language</a></li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -88,7 +108,7 @@
         <div class="container">
           <ul>
             <li>
-              <a href="./index.html"
+              <a href="index.html"
                 ><img
                   src="./assets/svg/home.svg"
                   alt="home"
@@ -97,8 +117,8 @@
               /></a>
             </li>
             <li class="dropdown">
-              <a href="" class="dropdown-btn">
-                <p>Profil</p>
+              <a href="#" class="dropdown-btn">
+                <p>Tentang</p>
                 <img
                   src="./assets/svg/down-arrow.svg"
                   alt="down-arrow"
@@ -106,13 +126,19 @@
                 />
               </a>
               <ul class="dropdown-content">
-                <li class="dropdown-items"><a href="#">Sambutan Rektor</a></li>
-                <li class="dropdown-items"><a href="#">Sejarah</a></li>
                 <li class="dropdown-items">
-                  <a href="#">Visi, Misi, Tujuan dan Mileston Pendidikan</a>
+                  <a href="./yayasan.html">Yayasan</a>
                 </li>
-                <li class="dropdown-items"><a href="#">Renstra</a></li>
-                <li class="dropdown-items"><a href="#">Akreditasi</a></li>
+                <li class="dropdown-items">
+                  <a href="./sambutan-ketua.html">Sambutan Ketua</a>
+                </li>
+                <li class="dropdown-items">
+                  <a href="./struktur-organisasi.html">Struktur Organisasi</a>
+                </li>
+                <li class="dropdown-items">
+                  <a href="./visi-misi.html">Visi Misi</a>
+                </li>
+                <!-- <li class="dropdown-items"><a href="#">Akreditasi</a></li>
                 <li class="dropdown-items"><a href="#">Pengurus Yayasan</a></li>
                 <li class="dropdown-items">
                   <a href="#">Pimpinan Universitas</a>
@@ -121,12 +147,12 @@
                   <a href="#">Pimpinan Fakultas-Fakultas</a>
                 </li>
                 <li class="dropdown-items"><a href="#">Pojok Rektor</a></li>
-                <li class="dropdown-items"><a href="#">Makna Lambang</a></li>
+                <li class="dropdown-items"><a href="#">Makna Lambang</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-btn">
-                <p>Pendidikan</p>
+              <a href="./prodi.html" class="dropdown-btn">
+                <p>Program Studi</p>
                 <img
                   src="./assets/svg/down-arrow.svg"
                   alt="down-arrow"
@@ -134,7 +160,7 @@
                 />
               </a>
               <ul class="dropdown-content">
-                <li class="dropdown-items sub-dropdown-btn">
+                <!-- <li class="dropdown-items sub-dropdown-btn">
                   <a href="#">
                     <p>Akademik</p>
                     <img
@@ -191,37 +217,22 @@
                       <a href="#">Pascasarjana</a>
                     </li>
                   </ul>
-                </li>
-                <li class="dropdown-items"><a href="#">Program Studi</a></li>
+                </li> -->
                 <li class="dropdown-items">
+                  <a href="./prodi.html">S1 Pendidikan Agama Konghucu</a>
+                </li>
+                <!-- <li class="dropdown-items">
                   <a href="#">Penerimaan Mahasiswa Baru</a>
                 </li>
                 <li class="dropdown-items">
                   <a href="#">Informasi Beasiswa</a>
                 </li>
-                <li class="dropdown-items"><a href="#">Fasilitas Kampus</a></li>
+                <li class="dropdown-items"><a href="#">Fasilitas Kampus</a></li> -->
               </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-btn">
-                <p>Penelitian</p>
-                <img
-                  src="./assets/svg/down-arrow.svg"
-                  alt="down-arrow"
-                  width="8px"
-                />
-              </a>
-              <ul class="dropdown-content">
-                <li class="dropdown-items"><a href="#">Pusat Studi</a></li>
-                <li class="dropdown-items"><a href="#">Portal Jurnal</a></li>
-                <li class="dropdown-items"><a href="#">Repository</a></li>
-                <li class="dropdown-items"><a href="#">OCS</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Pengabdian</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-btn">
-                <p>Internasional</p>
+                <p>Informasi Publik</p>
                 <img
                   src="./assets/svg/down-arrow.svg"
                   alt="down-arrow"
@@ -230,11 +241,45 @@
               </a>
               <ul class="dropdown-content">
                 <li class="dropdown-items">
-                  <a href="#">Kantor Urusan Internasional</a>
+                  <a href="./berita.html">Berita</a>
                 </li>
+                <li class="dropdown-items"><a href="#">Agenda</a></li>
+                <li class="dropdown-items">
+                  <a href="./pengumuman.html">Pengumuman</a>
+                </li>
+                <li class="dropdown-items"><a href="#">Foto</a></li>
+                <li class="dropdown-items"><a href="#">Video</a></li>
               </ul>
             </li>
+            <!-- <li><a href="#">Fasilitas</a></li> -->
             <li class="dropdown">
+              <a href="./fasilitas.html" class="dropdown-btn">
+                <p>Fasilitas</p>
+                <!-- <img
+                  src="./assets/svg/down-arrow.svg"
+                  alt="down-arrow"
+                  width="8px"
+                /> -->
+              </a>
+              <!-- <ul class="dropdown-content">
+                <li class="dropdown-items">
+                  <a href="#">Ruang Kelas Perkuliahan</a>
+                </li>
+                <li class="dropdown-items">
+                  <a href="#">Perpustakaan</a>
+                </li>
+                <li class="dropdown-items">
+                  <a href="#">Ruang Tamu</a>
+                </li>
+                <li class="dropdown-items">
+                  <a href="#">Aula</a>
+                </li>
+                <li class="dropdown-items">
+                  <a href="#">Ruang Serbaguna</a>
+                </li>
+              </ul> -->
+            </li>
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-btn">
                 <p>Layanan</p>
                 <img
@@ -250,23 +295,18 @@
                   <a href="#">Pengumuman untuk mahasiswa</a>
                 </li>
               </ul>
-            </li>
+            </li> -->
             <li class="dropdown">
-              <a href="#" class="dropdown-btn">
-                <p>Dokumen</p>
-                <img
-                  src="./assets/svg/down-arrow.svg"
-                  alt="down-arrow"
-                  width="8px"
-                />
+              <a href="./dosen.html" class="dropdown-btn">
+                <p>Profil Dosen</p>
               </a>
-              <ul class="dropdown-content">
+              <!-- <ul class="dropdown-content">
                 <li class="dropdown-items"><a href="#">Statuta</a></li>
                 <li class="dropdown-items">
                   <a href="#">Rencana Strategis</a>
                 </li>
                 <li class="dropdown-items"><a href="#">Laporan Kinerja</a></li>
-              </ul>
+              </ul> -->
             </li>
           </ul>
         </div>
@@ -422,10 +462,35 @@
       <div class="container">
         <div class="content">
           <div class="item">
-            <div class="logo-stikin">
+            <a href="./index.html" class="logo-stikin">
               <img src="./assets/img/logo-stikin.png" alt="logo-stikin" />
-            </div>
+            </a>
             <h2>Sekolah Tinggi Khonghucu Indonesia</h2>
+            <ul class="media-sosial">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="./assets/svg/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com" target="_blank"
+                  ><img src="./assets/svg/youtube.svg" alt="youtube"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img src="./assets/svg/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" target="_blank"
+                  ><img src="./assets/svg/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Alamat dan Layanan</h3>
             <div class="address">
               <ul>
                 <li>
@@ -453,36 +518,43 @@
             </div>
           </div>
           <div class="item">
-            <h3>Fakultas</h3>
+            <h3>Program Studi</h3>
             <ul>
-              <li><a href="#">Fakultas Agama Islam</a></li>
-              <li><a href="#">Hukum</a></li>
-              <li><a href="#">Pertanian</a></li>
-              <li><a href="#">Peternakan</a></li>
-              <li><a href="#">Teknik</a></li>
-              <li><a href="#">MIPA</a></li>
-              <li><a href="#">Keguruan</a></li>
-              <li><a href="#">Pendidikan</a></li>
-              <li><a href="#">Ekonomi dan Bisnis</a></li>
-              <li><a href="#">Ilmu Administrasi</a></li>
-              <li><a href="#">Kedokteran</a></li>
-              <li><a href="#">Pascasarjana</a></li>
+              <li><a href="./prodi.html">S1 Pendidikan Agama Khonghucu</a></li>
             </ul>
           </div>
           <div class="item">
-            <h3>Lembaga dan Unit</h3>
+            <h3>Tautuan</h3>
             <div class="item-list">
               <ul>
-                <li><a href="">Kantor Urusan Internasional</a></li>
-                <li><a href="">Lembaga Sertifikasi dan Profesi</a></li>
-                <li><a href="">Perpustakaan Pusat</a></li>
-                <li><a href="">LPPM</a></li>
-                <li><a href="">LPIK</a></li>
-                <li><a href="">LP2RP</a></li>
+                <li>
+                  <a href="http://e-jurnal.stikin.ac.id/" target="_blank"
+                    >Jurnal</a
+                  >
+                </li>
+                <li>
+                  <a href="https://siakad.stikin.ac.id/" target="_blank"
+                    >SIAKAD</a
+                  >
+                </li>
+                <li>
+                  <a href="http://pmb.stikin.ac.id/" target="_blank">PMB</a>
+                </li>
+                <li>
+                  <a href="http://lms.stikin.ac.id/" target="_blank"
+                    >E-Learning</a
+                  >
+                </li>
+                <li>
+                  <a href="http://perpus.stikin.ac.id/" target="_blank"
+                    >Perpustakaan</a
+                  >
+                </li>
+                <!-- <li><a href="">LP2RP</a></li>
                 <li><a href="">BAAK</a></li>
-                <li><a href="">BAUPK</a></li>
+                <li><a href="">BAUPK</a></li> -->
               </ul>
-              <ul>
+              <!-- <ul>
                 <li><a href="">BAKAK</a></li>
                 <li><a href="">BAKPTI</a></li>
                 <li><a href="">PPP-TIK</a></li>
@@ -491,33 +563,8 @@
                 <li><a href="">B2KIB</a></li>
                 <li><a href="">BIPA</a></li>
                 <li><a href="">SPI</a></li>
-              </ul>
+              </ul> -->
             </div>
-          </div>
-          <div class="item">
-            <h3>Ikuti Kami</h3>
-            <ul class="media-sosial">
-              <li>
-                <a href="#" target="_blank"
-                  ><img src="./assets/svg/facebook.svg" alt="facebook"
-                /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><img src="./assets/svg/youtube.svg" alt="youtube"
-                /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><img src="./assets/svg/instagram.svg" alt="instagram"
-                /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank"
-                  ><img src="./assets/svg/twitter.svg" alt="twitter"
-                /></a>
-              </li>
-            </ul>
           </div>
         </div>
         <hr />

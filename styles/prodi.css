@@ -1,0 +1,108 @@
+:root {
+  --primary: #109540;
+  --secondary: #fda50f;
+  --ternary: #61ce70;
+  --fourty: #f0fff2;
+  --gray: #f2f2f2;
+  --darkblue: #001c38;
+}
+
+#prodi {
+  padding: 200px 0px 100px;
+}
+#prodi .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+#prodi .container .content .main {
+  width: 70%;
+}
+#prodi .container .content .aside {
+  width: 25%;
+  padding: 20px;
+}
+#prodi .container .content .aside .list {
+  margin-bottom: 30px;
+}
+#prodi .container .content .aside .list h2 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#prodi .container .content .aside .list ul {
+  list-style: none;
+}
+#prodi .container .content .aside .list ul li {
+  margin-bottom: 10px;
+}
+#prodi .container .content .aside .list ul li a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+#prodi .container .content .aside .list ul li a:hover {
+  color: blue;
+}
+#prodi .container .content .aside .list select {
+  width: 100%;
+  padding: 2px 6px;
+}
+#prodi .container .content .main .title h1 {
+  font-size: 32px;
+}
+#prodi .container .content .main .desc {
+  margin-top: 30px;
+}
+#prodi .container .content .main .desc .list {
+  margin-top: 20px;
+}
+#prodi .container .content .main .desc .list h3 {
+  font-weight: 500;
+}
+#prodi .container .content .main .desc .list h3,
+#prodi .container .content .main .desc .list p {
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+#prodi .container .content .main .desc .list table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(213, 213, 213);
+}
+#prodi .container .content .main .desc .list table th, td {
+  text-align: left;
+  padding: 8px;
+}
+#prodi .container .content .main .desc .list table th {
+  background-color: #f2f2f2;
+}
+#prodi .container .content .main .desc .list table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#prodi .container .content .main .desc .list table tr td:first-child {
+  text-align: center;
+}
+#prodi .container .content .main .desc .list table tr td:last-child {
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #prodi {
+    padding: 150px 0px 10px;
+  }
+  #prodi .container .content {
+    display: block;
+  }
+  #prodi .container .content .main {
+    width: 100%;
+  }
+  #prodi .container .content .aside {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+}
