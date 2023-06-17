@@ -1,0 +1,136 @@
+:root {
+  --primary: #109540;
+  --secondary: #fda50f;
+  --ternary: #61ce70;
+  --fourty: #f0fff2;
+  --gray: #f2f2f2;
+  --darkblue: #001c38;
+}
+
+#sambutan-ketua {
+  padding: 200px 0px 100px;
+}
+#sambutan-ketua .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+#sambutan-ketua .container .content .main {
+  width: 70%;
+}
+#sambutan-ketua .container .content .aside {
+  width: 25%;
+  padding: 20px;
+}
+#sambutan-ketua .container .content .aside .list {
+  margin-bottom: 30px;
+}
+#sambutan-ketua .container .content .aside .list h2 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+#sambutan-ketua .container .content .aside .list ul {
+  list-style: none;
+}
+#sambutan-ketua .container .content .aside .list ul li {
+  margin-bottom: 10px;
+}
+#sambutan-ketua .container .content .aside .list ul li a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+}
+#sambutan-ketua .container .content .aside .list ul li a:hover {
+  color: blue;
+}
+#sambutan-ketua .container .content .aside .list select {
+  width: 100%;
+  padding: 2px 6px;
+}
+#sambutan-ketua .container .content .main .title h1 {
+  font-size: 32px;
+}
+#sambutan-ketua .container .content .main .desc {
+  margin-top: 20px;
+}
+#sambutan-ketua .container .content .main .desc p {
+  margin-top: 20px;
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+#sambutan-ketua .container .content .main .desc .ttd {
+  margin-top: 20px;
+}
+#sambutan-ketua .container .content .main .desc .ttd p{
+  margin-top: 2px;
+  font-weight: 500;
+}
+#sambutan-ketua .container .share {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sambutan-ketua .container .share p {
+  font-size: 20px;
+}
+#sambutan-ketua .container .share .social-media {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+#sambutan-ketua .container .share .social-media .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 18px;
+}
+#sambutan-ketua .container .share .social-media .item:nth-child(1) {
+  background-color: #3b5998;
+}
+#sambutan-ketua .container .share .social-media .item:nth-child(2) {
+  background-color: #1da1f2;
+}
+#sambutan-ketua .container .share .social-media .item:nth-child(3) {
+  background-color: #bd081c;
+}
+#sambutan-ketua .container .share .social-media .item:nth-child(4) {
+  background-color: #0077b5;
+}
+#sambutan-ketua .container .share .social-media .item p {
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #sambutan-ketua {
+    padding: 150px 0px 10px;
+  }
+  #sambutan-ketua .container .content {
+    display: block;
+  }
+  #sambutan-ketua .container .content .main {
+    width: 100%;
+  }
+  #sambutan-ketua .container .content .aside {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  #sambutan-ketua .container .share {
+    display: block;
+  }
+  #sambutan-ketua .container .share .social-media {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+}

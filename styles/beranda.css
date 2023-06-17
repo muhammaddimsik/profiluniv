@@ -6,8 +6,21 @@
   --gray: #f2f2f2;
 }
 
+.line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* keunggulan */
-#keunggulan{
+#keunggulan {
   padding: 40px 0;
   background: linear-gradient(to bottom, var(--fourty), #ffffff);
 }
@@ -15,6 +28,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+}
+#keunggulan .container .keunggulan-title h1 {
+  font-size: 32px;
 }
 #keunggulan .container .keunggulan-content {
   display: flex;
@@ -49,10 +65,10 @@
 }
 
 /* slogan */
-#slogan{
+#slogan {
   margin-top: 20px;
 }
-#slogan .container .content{
+#slogan .container .content {
   padding: 40px 40px 0;
   width: 100%;
   border-radius: 30px;
@@ -60,26 +76,26 @@
   display: flex;
   justify-content: space-between;
 }
-#slogan .container .content .text{
+#slogan .container .content .text {
   width: 48%;
 }
-#slogan .container .content .text h1{
+#slogan .container .content .text h1 {
   font-size: 32px;
 }
-#slogan .container .content .text h3{
+#slogan .container .content .text h3 {
   font-size: 24px;
   color: var(--ternary);
   margin: 0 0 20px;
 }
-#slogan .container .content .slogan-pict{
+#slogan .container .content .slogan-pict {
   width: 48%;
   display: flex;
   align-items: end;
 }
-#slogan .container .content .slogan-pict img{
+#slogan .container .content .slogan-pict img {
   width: 100%;
 }
-#slogan .container .prodi{
+#slogan .container .prodi {
   margin-top: 40px;
   padding: 40px;
   width: 100%;
@@ -87,33 +103,304 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  background-image: url('../assets/img/mahasiswi-konghucu.jpg');
+  background-image: url("../assets/img/mahasiswi-konghucu.jpg");
   background-position: center;
   box-shadow: inset 0 0 0 2000px rgba(0, 146, 41, 0.8);
 }
-#slogan .container .prodi .title{
+#slogan .container .prodi .title {
   width: 30%;
 }
-#slogan .container .prodi .title h1{
+#slogan .container .prodi .title h1 {
   color: white;
   font-weight: 500;
   font-size: 28px;
 }
-#slogan .container .prodi .sarjana h5, #slogan .container .prodi .magister h5{
+#slogan .container .prodi .sarjana h5,
+#slogan .container .prodi .magister h5 {
   color: white;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 10px;
 }
-#slogan .container .prodi .sarjana, #slogan .container .prodi .magister{
+#slogan .container .prodi .sarjana,
+#slogan .container .prodi .magister {
   width: 30%;
 }
-#slogan .container .prodi .sarjana select, #slogan .container .prodi .magister select{
+#slogan .container .prodi .sarjana select,
+#slogan .container .prodi .magister select {
   width: 100%;
   padding: 4px;
 }
 
-@media (min-width: 320px) and (max-width: 767px){
+/* testimoni */
+#testimonial {
+  margin-top: 80px;
+}
+#testimonial .container .title {
+  width: 50%;
+  margin: 0 auto;
+}
+#testimonial .container .title h1 {
+  font-size: 32px;
+  text-align: center;
+}
+#testimonial .container .content {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(198, 198, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* count */
+#count {
+  margin-top: 100px;
+  display: flex;
+}
+#count .bg-gedung-left,
+#count .bg-gedung-right {
+  width: 20%;
+}
+#count .bg-gedung-left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+#count .bg-gedung-left img,
+#count .bg-gedung-right img {
+  width: 100%;
+}
+#count .container .title {
+  width: 50%;
+  margin: 0 auto;
+}
+#count .container .title h1 {
+  text-align: center;
+  font-size: 32px;
+}
+#count .container .content .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#count .container .content .card-container .card {
+  width: 30%;
+  text-align: center;
+  margin-top: 50px;
+}
+#count .container .content .card-container .card p:nth-child(1) {
+  font-size: 54px;
+  font-weight: bold;
+  color: var(--ternary);
+}
+#count .container .content .card-container .card p:nth-child(2) {
+  font-weight: 500;
+}
+#count .container .content .mahasiswa-active {
+  text-align: center;
+  margin-top: 50px;
+}
+#count .container .content .mahasiswa-active p:nth-child(1) {
+  font-size: 54px;
+  font-weight: bold;
+  color: var(--ternary);
+}
+#count .container .content .mahasiswa-active p:nth-child(2) {
+  font-weight: 500;
+}
+
+/* berita terkini */
+#berita-terkini {
+  margin-top: 50px;
+  padding: 50px 0;
+  /* background: linear-gradient(to bottom, var(--fourty), #ffffff); */
+  background: var(--fourty);
+}
+#berita-terkini .container .title h1 {
+  text-align: center;
+  font-size: 32px;
+}
+#berita-terkini .container .content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#berita-terkini .container .content .card {
+  width: 32%;
+  background-color: #fff;
+  margin-top: 20px;
+}
+#berita-terkini .container .content .card .img {
+  height: 230px;
+  width: 100%;
+}
+#berita-terkini .container .content .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#berita-terkini .container .content .card .desc {
+  padding: 20px 10px;
+}
+#berita-terkini .container .content .card .desc h4 {
+  font-size: 20px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#berita-terkini .container .content .card .desc p {
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#berita-terkini .container .content .card .desc a {
+  color: var(--primary);
+}
+#berita-terkini .container .btn-load {
+  text-align: center;
+  margin-top: 40px;
+}
+#berita-terkini .container .btn-load .load-more {
+  padding: 10px 24px;
+  border-radius: 32px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  background-color: var(--ternary);
+  border: none;
+  cursor: pointer;
+}
+#berita-terkini .container .btn-load .load-more:hover {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* harakah rektor */
+#harakah-rektor {
+  margin-top: 100px;
+}
+#harakah-rektor .container .title h1 {
+  text-align: center;
+  font-size: 32px;
+}
+#harakah-rektor .container .content {
+  margin-top: 40px;
+  display: flex;
+}
+#harakah-rektor .container .content .rektor-img {
+  width: 30%;
+}
+#harakah-rektor .container .content .rektor-img img {
+  width: 100%;
+}
+#harakah-rektor .container .content .harakah-container {
+  width: 70%;
+}
+#harakah-rektor .container .content .harakah-container .card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#harakah-rektor .container .content .harakah-container .card-container .card {
+  width: 32%;
+}
+#harakah-rektor
+  .container
+  .content
+  .harakah-container
+  .card-container
+  .card
+  .img {
+  width: 100%;
+  height: 320px;
+}
+#harakah-rektor
+  .container
+  .content
+  .harakah-container
+  .card-container
+  .card
+  .img
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+#harakah-rektor
+  .container
+  .content
+  .harakah-container
+  .card-container
+  .card
+  .desc {
+  padding: 10px 10px 20px;
+}
+#harakah-rektor
+  .container
+  .content
+  .harakah-container
+  .card-container
+  .card
+  .desc
+  a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#harakah-rektor
+  .container
+  .content
+  .harakah-container
+  .card-container
+  .card
+  .desc
+  a:hover {
+  color: var(--primary);
+}
+#harakah-rektor
+  .container
+  .content
+  .harakah-container
+  .card-container
+  .card
+  .desc
+  p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px;
+}
+#harakah-rektor .container .content .harakah-container .btn-load {
+  text-align: center;
+  margin-top: 40px;
+}
+#harakah-rektor .container .content .harakah-container .btn-load button {
+  padding: 10px 24px;
+  border: none;
+  background-color: var(--ternary);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
   #keunggulan .container .keunggulan-title {
     text-align: center;
   }
@@ -140,34 +427,108 @@
   }
 
   /* slogan */
-  #slogan .container .content{
+  #slogan .container .content {
     padding: 20px 20px 0;
     width: 100%;
     border-radius: 30px;
     display: block;
     justify-content: space-between;
   }
-  #slogan .container .content .text{
+  #slogan .container .content .text {
     width: 100%;
   }
-  #slogan .container .content .slogan-pict{
+  #slogan .container .content .slogan-pict {
     width: 100%;
     display: flex;
     align-items: end;
     margin-top: 20px;
   }
-  #slogan .container .prodi{
+  #slogan .container .prodi {
     margin-top: 40px;
     padding: 40px 20px;
     width: 100%;
     border-radius: 16px;
     display: block;
   }
-  #slogan .container .prodi .title{
+  #slogan .container .prodi .title {
     width: 100%;
   }
-  #slogan .container .prodi .sarjana, #slogan .container .prodi .magister{
+  #slogan .container .prodi .sarjana,
+  #slogan .container .prodi .magister {
     width: 100%;
     margin-top: 30px;
+  }
+
+  /* testimonial */
+  #testimonial .container .title {
+    width: 100%;
+  }
+
+  /* count */
+  #count .bg-gedung-left,
+  #count .bg-gedung-right {
+    display: none;
+  }
+  #count .container .title {
+    width: 100%;
+  }
+
+  /* berita terkini */
+  #berita-terkini .container .content {
+    display: block;
+  }
+  #berita-terkini .container .content .card {
+    width: 100%;
+  }
+  #berita-terkini .container .content .card .img {
+    height: 200px;
+  }
+  #berita-terkini .container .content .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #berita-terkini .container .content .card .desc {
+    padding: 20px 10px;
+  }
+
+  /* harakah rektor */
+  #harakah-rektor .container .content {
+    display: block;
+  }
+  #harakah-rektor .container .content .rektor-img {
+    width: 100%;
+  }
+  #harakah-rektor .container .content .harakah-container {
+    width: 100%;
+  }
+  #harakah-rektor .container .content .harakah-container .card-container {
+    display: block;
+  }
+  #harakah-rektor .container .content .harakah-container .card-container .card {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #harakah-rektor
+    .container
+    .content
+    .harakah-container
+    .card-container
+    .card
+    .img {
+    width: 100%;
+    height: 100%;
+  }
+  #harakah-rektor
+    .container
+    .content
+    .harakah-container
+    .card-container
+    .card
+    .img
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 }
