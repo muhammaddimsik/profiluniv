@@ -27,7 +27,7 @@
 #sambutan-ketua .container .content .aside .list h2 {
   font-weight: 500;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 #sambutan-ketua .container .content .aside .list ul {
@@ -65,7 +65,7 @@
 #sambutan-ketua .container .content .main .desc .ttd {
   margin-top: 20px;
 }
-#sambutan-ketua .container .content .main .desc .ttd p{
+#sambutan-ketua .container .content .main .desc .ttd p {
   margin-top: 2px;
   font-weight: 500;
 }

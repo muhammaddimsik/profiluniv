@@ -87,6 +87,10 @@
   color: var(--ternary);
   margin: 0 0 20px;
 }
+#slogan .container .content .text p {
+  line-height: 1.5;
+  word-spacing: 2px;
+}
 #slogan .container .content .slogan-pict {
   width: 48%;
   display: flex;
@@ -481,7 +485,7 @@
     width: 100%;
   }
   #berita-terkini .container .content .card .img {
-    height: 200px;
+    height: 100%;
   }
   #berita-terkini .container .content .card .img img {
     width: 100%;
@@ -489,7 +493,7 @@
     object-fit: contain;
   }
   #berita-terkini .container .content .card .desc {
-    padding: 20px 10px;
+    padding: 20px;
   }
 
   /* harakah rektor */

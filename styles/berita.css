@@ -27,7 +27,7 @@
 #berita .container .content .aside .list h2 {
   font-weight: 500;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 #berita .container .content .aside .list ul {
@@ -57,26 +57,26 @@
 #berita .container .content .main .desc {
   margin-top: 20px;
 }
-#berita .container .content .main .desc .card{
+#berita .container .content .main .desc .card {
   width: 100%;
   margin-top: 30px;
 }
-#berita .container .content .main .desc .card .author-date{
+#berita .container .content .main .desc .card .author-date {
   display: flex;
   gap: 4px;
 }
-#berita .container .content .main .desc .card .author-date p{
+#berita .container .content .main .desc .card .author-date p {
   font-size: 14px;
 }
-#berita .container .content .main .desc .card .body{
+#berita .container .content .main .desc .card .body {
   display: flex;
   justify-content: space-between;
 }
-#berita .container .content .main .desc .card .body .text{
+#berita .container .content .main .desc .card .body .text {
   color: black;
   text-decoration: none;
 }
-#berita .container .content .main .desc .card .body .text h4{
+#berita .container .content .main .desc .card .body .text h4 {
   font-size: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -85,23 +85,23 @@
   margin: 6px 0;
   font-weight: 500;
 }
-#berita .container .content .main .desc .card .body .text h4:hover{
+#berita .container .content .main .desc .card .body .text h4:hover {
   text-decoration: underline;
 }
 
-#berita .container .content .main .desc .card .body .text p{
+#berita .container .content .main .desc .card .body .text p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-#berita .container .content .main .desc .card .body .img{
+#berita .container .content .main .desc .card .body .img {
   width: 30%;
 }
-#berita .container .content .main .desc .card .body .img img{
-  width: 100%
+#berita .container .content .main .desc .card .body .img img {
+  width: 100%;
 }
-#berita .container .content .main .desc .card hr{
+#berita .container .content .main .desc .card hr {
   margin-top: 20px;
 }
 
@@ -120,19 +120,26 @@
     padding: 0px;
     margin-top: 30px;
   }
-  #berita .container .content .main .desc .card .author-date p{
+  #berita .container .content .main .desc .card .author-date p {
     font-size: 12px;
   }
-  #berita .container .content .main .desc .card .body .text h4{
-    font-size: 16px;
+  #berita .container .content .main .desc .card .body .text h4 {
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 6px 0;
+    font-weight: 500;
   }
-  #berita .container .content .main .desc .card .body .text p{
+  #berita .container .content .main .desc .card .body .text p {
     display: none;
   }
-  #berita .container .content .main .desc .card .body .text{
+  #berita .container .content .main .desc .card .body .text {
     width: 60%;
   }
-  #berita .container .content .main .desc .card .body{
+  #berita .container .content .main .desc .card .body {
     margin-top: 10px;
+    align-items: center;
   }
 }

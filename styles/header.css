@@ -16,6 +16,7 @@
 header {
   width: 100%;
   position: fixed;
+  z-index: 999;
 }
 
 header .top-header {
@@ -212,24 +213,18 @@ nav ul .dropdown:hover .dropdown-content {
     padding: 10px 0 0;
   }
 
-  header .container .logo a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: black;
-  }
-
   header .top-header {
     background-color: var(--ternary);
   }
 
   header .top-header .dropdown-top {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   header .top-header ul li a {
     border-bottom: none;
+    padding: 12px;
   }
 
   header .top-header ul li .support {
@@ -255,10 +250,19 @@ nav ul .dropdown:hover .dropdown-content {
     display: block;
   }
 
+  header .container .logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
   .logo .logo-name {
     display: block;
     font-size: 20px;
     font-weight: 600;
+    width: 70%;
   }
 
   .container .logo {
@@ -271,7 +275,7 @@ nav ul .dropdown:hover .dropdown-content {
   }
 
   .container .logo .logo-stikin {
-    width: 40px;
+    width: 60px;
   }
 
   .main-navigation {
@@ -290,6 +294,7 @@ nav ul .dropdown:hover .dropdown-content {
 
   nav {
     background-color: white;
+    padding: 10px 0;
   }
 
   nav ul {
@@ -298,6 +303,10 @@ nav ul .dropdown:hover .dropdown-content {
 
   nav ul li {
     width: 100%;
+  }
+
+  nav ul li a {
+    padding: 12px;
   }
 
   nav ul li .dropdown-content {

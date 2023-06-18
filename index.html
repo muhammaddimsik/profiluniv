@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/beranda.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap");
       *,
@@ -30,14 +31,14 @@
     <!-- header start -->
     <header>
       <div class="container">
-        <div href="./index.html" class="logo">
+        <div class="logo">
           <a href="./index.html">
             <img
               src="./assets/img/logo-stikin.png"
               alt="logo-stikin"
               class="logo-stikin"
             />
-            <p class="logo-name">Sekolah Tinggi Konghucu Indonesia</p>
+            <p class="logo-name">Sekolah Tinggi Khonghucu Indonesia</p>
           </a>
           <li class="humberger-menu" id="humberger-menu">
             <img src="./assets/svg/hamburger.svg" alt="humberger-menu" />
@@ -151,7 +152,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="./prodi.html" class="dropdown-btn">
+              <a href="#" class="dropdown-btn">
                 <p>Program Studi</p>
                 <img
                   src="./assets/svg/down-arrow.svg"
@@ -219,7 +220,7 @@
                   </ul>
                 </li> -->
                 <li class="dropdown-items">
-                  <a href="./prodi.html">S1 Pendidikan Agama Konghucu</a>
+                  <a href="./prodi.html">S1 Pendidikan Agama Khonghucu</a>
                 </li>
                 <!-- <li class="dropdown-items">
                   <a href="#">Penerimaan Mahasiswa Baru</a>
@@ -315,10 +316,26 @@
     <!-- header end -->
 
     <section id="slider">
-      <div
-        class="slider"
-        style="width: 100%; height: 90vh; background: #109540"
-      ></div>
+      <div class="slider-container">
+        <div class="my-slide fade">
+          <img src="./assets/img/berita-1.jpeg" alt="slide-1" />
+        </div>
+        <div class="my-slide fade">
+          <img src="./assets/img/berita-2.jpg" alt="slide-2" />
+        </div>
+        <div class="my-slide fade">
+          <img src="./assets/img/berita-3.jpeg" alt="slide-3" />
+        </div>
+        <div class="next-prev">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots">
+          <div class="dot" onclick="currentSlide(1)"></div>
+          <div class="dot" onclick="currentSlide(2)"></div>
+          <div class="dot" onclick="currentSlide(3)"></div>
+        </div>
+      </div>
     </section>
 
     <section id="keunggulan">
@@ -337,31 +354,31 @@
             <div class="card-icon">
               <img src="./assets/img/kampus-nu.png" alt="" width="40%" />
             </div>
-            <h4>Akreditasi Unggul</h4>
+            <h4>Kampus Khonghucu Terbaik</h4>
           </div>
           <div class="card">
             <div class="card-icon">
               <img src="./assets/img/kampus-mendunia.png" alt="" width="40%" />
             </div>
-            <h4>Akreditasi Unggul</h4>
+            <h4>Kampus Mendunia</h4>
           </div>
           <div class="card">
             <div class="card-icon">
               <img src="./assets/img/kampus-islami.png" alt="" width="40%" />
             </div>
-            <h4>Akreditasi Unggul</h4>
+            <h4>Kampus Modern</h4>
           </div>
           <div class="card">
             <div class="card-icon">
               <img src="./assets/img/kampus-kredibel.png" alt="" width="40%" />
             </div>
-            <h4>Akreditasi Unggul</h4>
+            <h4>Kampus Kredibel</h4>
           </div>
           <div class="card">
             <div class="card-icon">
               <img src="./assets/img/kampus-unggul.png" alt="" width="40%" />
             </div>
-            <h4>Akreditasi Unggul</h4>
+            <h4>Kampus Unggul</h4>
           </div>
         </div>
         <div class="mitra-container">
@@ -403,13 +420,14 @@
       <div class="container">
         <div class="content">
           <div class="text">
-            <h1>Sekolah Tinggi Konghucu Indonesia</h1>
+            <h1>Sekolah Tinggi Khonghucu Indonesia</h1>
             <h3>Kampus Unggul & Berdaya Saing</h3>
             <p>
-              Visi Unisma menjadi Universitas terkemuka dengan standar
-              Internasional, berorientasi masa depan ilmu pengetahuan dan
-              teknologi serta budaya, untuk kemaslahatan umat yang berakhlak
-              mulia, berdasarkan Islam Ahlussunnah waljama’ah
+              Menjadi Perguruan Tinggi Khonghucu Indonesia yang mampu
+              mengembangkan nilai nilai Kebajikan dan pusat pengkajian agama
+              Khonghucu yang unggul dan berdaya saing, dan mampu berperan aktif
+              dalam pembangunan bangsa melalui proses pendidikan, penelitian dan
+              pengabdian kepada masyarakat.
             </p>
           </div>
           <div class="slogan-pict">
@@ -422,7 +440,7 @@
           </div>
           <div class="sarjana">
             <h5>Temukan Program Studi Sarjana Favorit Anda disini:</h5>
-            <select name="cars" id="cars">
+            <select name="cars" id="sarjana">
               <option value="none">Sarjana</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -433,7 +451,7 @@
             <h5>
               Temukan Program Studi Magister dan Doktor Favorit Anda disini:
             </h5>
-            <select name="cars" id="cars">
+            <select name="cars" id="magister">
               <option value="none">Magister</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -447,11 +465,10 @@
     <section id="testimonial">
       <div class="container">
         <div class="title">
-          <h1>Testimoni Para Tokoh Tentang Kampus Konghucu Indonesia</h1>
+          <h1>Testimoni Para Tokoh Tentang Kampus Khonghucu Indonesia</h1>
         </div>
         <div class="content">
-          <p>Slider</p>
-          <img src="" alt="" />
+          <p>testi</p>
         </div>
       </div>
     </section>
@@ -462,7 +479,7 @@
       </div>
       <div class="container">
         <div class="title">
-          <h1>STIKIN dalam Angka</h1>
+          <h1>Sekolah Tinggi Khonghucu Indonesia dalam Angka</h1>
         </div>
         <div class="content">
           <div class="card-container">
@@ -518,7 +535,7 @@
                 Perguruan Tinggi Sekota Purwokerto
               </h4>
               <p>
-                Sekolah Tinggi Khonghuci Indonesia (STIKIN) Purwokerto
+                Sekolah Tinggi Khonghucu Indonesia (STIKIN) Purwokerto
                 melaksanakan kesepakatan bersama dengan Komisi Nasional
                 Disabilitas (KND) RI
               </p>
@@ -561,7 +578,7 @@
                 Perguruan Tinggi Sekota Purwokerto
               </h4>
               <p>
-                Sekolah Tinggi Khonghuci Indonesia (STIKIN) Purwokerto
+                Sekolah Tinggi Khonghucu Indonesia (STIKIN) Purwokerto
                 melaksanakan kesepakatan bersama dengan Komisi Nasional
                 Disabilitas (KND) RI
               </p>
@@ -797,6 +814,44 @@
       dropdownTop.addEventListener("click", () => {
         dropdownTopContent.classList.toggle("show");
       });
+    </script>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("my-slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      setInterval(() => {
+        plusSlides(1);
+      }, 5000);
     </script>
   </body>
 </html>

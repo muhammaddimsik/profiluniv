@@ -27,7 +27,7 @@
 #prodi .container .content .aside .list h2 {
   font-weight: 500;
   font-size: 20px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 #prodi .container .content .aside .list ul {
@@ -73,7 +73,8 @@
   border-collapse: collapse;
   border: 1px solid rgb(213, 213, 213);
 }
-#prodi .container .content .main .desc .list table th, td {
+#prodi .container .content .main .desc .list table th,
+td {
   text-align: left;
   padding: 8px;
 }
