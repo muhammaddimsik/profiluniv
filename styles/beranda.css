@@ -105,7 +105,7 @@
   width: 100%;
   border-radius: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: start;
   background-image: url("../assets/img/mahasiswi-konghucu.jpg");
   background-position: center;
@@ -149,14 +149,41 @@
   text-align: center;
 }
 #testimonial .container .content {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   width: 100%;
-  height: 500px;
-  background-color: rgb(198, 198, 198);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+#testimonial .container .content .card{
+  width: 32%;
+  border: 1px solid var(--primary);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+#testimonial .container .content .card .avatar{
+  margin: 0 auto;
+}
+#testimonial .container .content .card .avatar p{
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#testimonial .container .content .card .avatar img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+#testimonial .container .content .card .text{
+  margin-top: 20px;
+}
+#testimonial .container .content .card .text p{
+  line-height: 1.5;
+  word-spacing: 2px;
 }
 
 /* count */
@@ -465,6 +492,14 @@
 
   /* testimonial */
   #testimonial .container .title {
+    width: 100%;
+  }
+
+  #testimonial .container .content {
+    width: 100%;
+    display: block;
+  }
+  #testimonial .container .content .card{
     width: 100%;
   }
 
